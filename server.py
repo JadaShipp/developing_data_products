@@ -10,5 +10,8 @@ def index():
 
 @app.route('/roll-dice')
 def dice(): 
-    roll = numpy.random.randint(1,6) 
-    return f"{roll}"
+    roll1 = numpy.random.randint(1,6)
+    roll2 = numpy.random.randint(1,6) 
+    roll3 = numpy.random.randint(1,6) 
+
+    return f"{roll1}, {roll2}, {roll3}"
